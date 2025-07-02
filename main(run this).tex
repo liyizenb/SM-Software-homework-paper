@@ -1,0 +1,108 @@
+\documentclass[12pt]{HomeWork}
+
+%%%%%% ========== 身份信息填写 ========== %%%%%%
+\title{统计软件及应用作业}                   %题目
+\newcommand{\Class}{数学233}               %班级
+\newcommand{\Lession}{统计软件01}          %序号
+\newcommand{\Num}{2023307150601}          %学号
+\author{李奕则}                            %姓名
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%% ========== 页眉设置 ========== %%%%%%
+\fancyhead[C]{\thetitle{}}
+\fancyhead[L]{\Class \theauthor{}}
+\fancyhead[R]{\today}
+
+\begin{document}
+\thispagestyle{empty}
+
+%%%%%% ========== 首页标题 ========== %%%%%%
+\begin{center}
+    \zihao{3}\heiti 统计软件及应用作业
+\end{center}
+
+%%%%%% ========== 基本信息表格 ========== %%%%%%
+\noindent
+\begin{tabular}{@{}p{0.4\textwidth} p{0.4\textwidth}@{}}
+    \quad 序号：\Lession & \centering 日期：\today \tabularnewline
+\end{tabular}
+
+\vspace{1em}
+\noindent
+\begin{tabular}{|>{\centering\arraybackslash}p{1.5cm}|
+                  >{\centering\arraybackslash}p{2.6cm}|
+                  >{\centering\arraybackslash}p{1.5cm}|
+                  >{\centering\arraybackslash}p{2.6cm}|
+                  >{\centering\arraybackslash}p{1.5cm}|
+                  >{\centering\arraybackslash}p{3.4cm}|}
+    \hline
+    班级 & 数学233 & 姓名 & 李奕则 & 学号 & \Num \\
+    \hline
+    \begin{minipage}[t][1.5cm][t]{\linewidth}
+        \centering 章节\\ 名称
+    \end{minipage} 
+    &
+    \multicolumn{5}{p{12.1cm}|}{%
+        \begin{minipage}[t]{\linewidth}
+            第1章\quad SPSS 软件概述\\
+            第2章\quad 统计数据的收集与预处理\\
+            第3章\quad 描述性统计分析
+            \vspace{0.3em}
+        \end{minipage}
+    } \\
+    \hline
+\end{tabular}
+
+%%%%%% ========== 正文内容 ========== %%%%%%
+\section*{题目与求解}
+
+\subsectionWithoutSectionNum    %勿删，调整序号用
+
+\subsection{第二章作业1（数据和文件的简单操作）}
+\begin{enumerate}
+    \item 首先；
+    \item 其次；
+    \item 最后。
+\end{enumerate}
+
+\subsection{第二章作业2（COUNT 和 COMPUTE 函数运用）}
+% ……可继续补充内容……
+
+\subsection{使用帮助}
+\begin{itemize}
+    \item 本文档代码开源，存放于 Overleaf 和 GitHub 网站，项目网址如下：
+    \begin{itemize}
+        \item \href{https://cn.overleaf.com/read/gqyrhvbcdphk\#93ff90}{\url{https://cn.overleaf.com/read/gqyrhvbcdphk\#93ff90}}
+        \item \href{https://cn.overleaf.com/read/qtwxxnxbgmfs\#b0bfff}{\url{https://cn.overleaf.com/read/qtwxxnxbgmfs\#b0bfff}}
+    \end{itemize}
+    \item 文档适配大多数 LaTeX 编译环境，未特别说明部分与标准 LaTeX 一致；
+    \item 由于 SPSS 中 ``*'' 为注释符号，与乘号冲突，因此在文档末尾的代码展示环境中用 ``*-'' 作为注释前缀。
+\end{itemize}
+
+%%%%%% ========== 小结与扩展 ========== %%%%%%
+\section*{小结}
+(可以写一下作业过程中遇到的问题及解决方案，以及需要注意的事项)
+
+\begin{note}
+    这是笔记环境
+\end{note}
+
+\begin{prb}
+    这是问题环境
+\end{prb}
+
+\begin{soln}
+    这是解决环境
+\end{soln}
+
+%%%%%% ========== 附录代码 ========== %%%%%%
+\section{代码}
+\subsection{SPSS 代码}
+\begin{lstlisting}[language=SPSS, caption={SPSS 计算示例}]
+*- 以下是计算总分的 SPSS 语句。
+COMPUTE grade = 10*(Q1 = "a" + Q2 = "c" + Q3 = "d" + Q4 = "b" 
+    + Q5 = "b" + Q6 = "a" + Q7 = "b" + Q8 = "b" + Q9 = "c" + Q10 = "a").
+EXECUTE.
+\end{lstlisting}
+
+\end{document}
