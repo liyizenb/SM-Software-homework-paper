@@ -17,7 +17,7 @@ SPSS课程作业文档latex版本。本模板适用于 **CAU统计软件及应�
 ### ✅ 在 Overleaf 上使用
 
 1. 新建 Overleaf 项目，上传 `HomeWork.cls` 与 `main.tex`
-2. 设置编译方式为 **XeLaTeX**
+2. 左上角设置编译方式为 **XeLaTeX**
 3. 编译运行，开始书写作业内容
 4. 或者直接进入链接：https://cn.overleaf.com/read/gqyrhvbcdphk#93ff90
 
