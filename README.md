@@ -43,7 +43,7 @@ SPSS课程作业文档latex版本。本模板适用于 **CAU统计软件及应�
 - ✅ 中文环境完美支持（兼容 Mac / Windows）
 - ✅ 自定义页眉（标题 / 班级 / 日期自动显示）
 - ✅ 自动生成“问题-解决-笔记”模块（使用 `prb`、`soln`、`note` 环境）
-- ✅ SPSS 代码高亮展示，适配 `*-` 注释风格
+- ✅ SPSS 代码高亮展示，注意！注释请使用 `*-` ！
 - ✅ 提供小节编号样式切换命令：  
   - `\subsectionWithoutSectionNum` 仅使用小节编号 `1`、`2`  
   - `\subsectionWithSectionNum` 使用完整编号 `2.1`、`2.2`
