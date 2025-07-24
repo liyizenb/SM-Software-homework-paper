@@ -2,10 +2,11 @@
 
 %%%%%% ========== 身份信息填写 ========== %%%%%%
 \title{统计软件及应用作业}                   %题目
-\newcommand{\Class}{数学233}               %班级
+% \title{数学软件综合训练\bigroman{2}作业}   %题目（二选一）
+\newcommand{\Class}{数学2xx}               %班级
 \newcommand{\Lession}{统计软件01}          %序号
-\newcommand{\Num}{2023307150601}          %学号
-\author{李奕则}                            %姓名
+\newcommand{\Num}{2023123456789}          %学号
+\author{李奕贝}                            %姓名
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%% ========== 页眉设置 ========== %%%%%%
@@ -18,7 +19,7 @@
 
 %%%%%% ========== 首页标题 ========== %%%%%%
 \begin{center}
-    \zihao{3}\heiti 统计软件及应用作业
+    \zihao{3}\heiti \thetitle{}
 \end{center}
 
 %%%%%% ========== 基本信息表格 ========== %%%%%%
@@ -36,7 +37,7 @@
                   >{\centering\arraybackslash}p{1.5cm}|
                   >{\centering\arraybackslash}p{3.4cm}|}
     \hline
-    班级 & 数学233 & 姓名 & 李奕则 & 学号 & \Num \\
+    班级 & \Class & 姓名 & \theauthor{} & 学号 & \Num \\
     \hline
     \begin{minipage}[t][1.5cm][t]{\linewidth}
         \centering 章节\\ 名称
@@ -57,27 +58,46 @@
 \section*{题目与求解}
 
 \subsectionWithoutSectionNum    %勿删，调整序号用
-
-\subsection{第二章作业1（数据和文件的简单操作）}
-\begin{enumerate}
-    \item 首先；
-    \item 其次；
-    \item 最后。
-\end{enumerate}
-
-\subsection{第二章作业2（COUNT 和 COMPUTE 函数运用）}
-% ……可继续补充内容……
-
 \subsection{使用帮助}
 \begin{itemize}
     \item 本文档代码开源，存放于 Overleaf 和 GitHub 网站，项目网址如下：
     \begin{itemize}
         \item \href{https://cn.overleaf.com/read/gqyrhvbcdphk\#93ff90}{\url{https://cn.overleaf.com/read/gqyrhvbcdphk\#93ff90}}
-        \item \href{https://cn.overleaf.com/read/qtwxxnxbgmfs\#b0bfff}{\url{https://cn.overleaf.com/read/qtwxxnxbgmfs\#b0bfff}}
+        \item \href{https://github.com/liyizenb/SPSS-homework-paper}{\url{https://github.com/liyizenb/SPSS-homework-paper}}
     \end{itemize}
     \item 文档适配大多数 LaTeX 编译环境，未特别说明部分与标准 LaTeX 一致；
     \item 由于 SPSS 中 ``*'' 为注释符号，与乘号冲突，因此在文档末尾的代码展示环境中用 ``*-'' 作为注释前缀。
 \end{itemize}
+
+\subsection{代码插入}
+\begin{lstlisting}[language=SPSS, caption={SPSS 代码示例}]
+*- 以下是计算总分的 SPSS 语句。
+COMPUTE grade = 10*(Q1 = "a" + Q2 = "c" + Q3 = "d" + Q4 = "b" 
+    + Q5 = "b" + Q6 = "a" + Q7 = "b" + Q8 = "b" + Q9 = "c" + Q10 = "a").
+EXECUTE.
+\end{lstlisting}
+\begin{lstlisting}[language=Matlab, caption={Matlab 代码示例}]
+r = 2;
+p = 0.5;
+n = 12;
+T = log(r) / (n * log(1 + 0.01 * p));
+disp(T)
+\end{lstlisting}
+\begin{lstlisting}[language=R, caption={R语言 代码示例}]
+# --- 1. 录入数据 ---
+data <- read.table(header = TRUE, text = "
+ID Gender Math Chinese English Physics
+3001 男 80 76 81 90
+...
+3035 女 64 70 72 77
+", encoding = "UTF-8")
+\end{lstlisting}
+
+\subsection{作业3}
+$$\cdots$$
+% ……可继续补充内容……
+
+
 
 %%%%%% ========== 小结与扩展 ========== %%%%%%
 \section*{小结}
@@ -94,15 +114,5 @@
 \begin{soln}
     这是解决环境
 \end{soln}
-
-%%%%%% ========== 附录代码 ========== %%%%%%
-\section{代码}
-\subsection{SPSS 代码}
-\begin{lstlisting}[language=SPSS, caption={SPSS 计算示例}]
-*- 以下是计算总分的 SPSS 语句。
-COMPUTE grade = 10*(Q1 = "a" + Q2 = "c" + Q3 = "d" + Q4 = "b" 
-    + Q5 = "b" + Q6 = "a" + Q7 = "b" + Q8 = "b" + Q9 = "c" + Q10 = "a").
-EXECUTE.
-\end{lstlisting}
 
 \end{document}
